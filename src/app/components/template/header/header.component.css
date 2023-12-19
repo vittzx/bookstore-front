@@ -37,7 +37,7 @@
 }
 
 .header-list a:hover{
-    color: #dc143c;
+    text-decoration: underline;
     transition: .9s;
 }
 
