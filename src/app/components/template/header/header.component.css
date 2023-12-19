@@ -16,7 +16,7 @@
 }
 
 .header-title a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -32,12 +32,12 @@
 
 .header-list a{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: .9s;
 }
 
 .header-list a:hover{
-    color: red;
+    color: #dc143c;
     transition: .9s;
 }
 
