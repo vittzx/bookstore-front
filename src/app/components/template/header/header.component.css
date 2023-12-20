@@ -1,13 +1,13 @@
 .header-page{
-    position: fixed;
-    height: 10%;
-    width: 95%;
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-top: 3vmin;
     gap: 2vmin;
+    padding-bottom: 2vmin;
 }
 
 .header-title{
@@ -22,6 +22,7 @@
 
 
 .header-list ul{
+    
     display: flex;
     flex-direction: row;
     list-style: none;

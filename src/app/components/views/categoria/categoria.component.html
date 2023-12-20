@@ -1,3 +1,27 @@
-<div class="content">
-    <div class="title"></div>
+<div class="content bg-image2">
+    <div class="content-title">
+        <h2>Categorias</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Descrição</td>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr>
+                <td [textContent]="categoryGeneral.name"><a href=""></a></td>
+                <td [textContent]="categoryGeneral.description"></td>
+            </tr>
+            <tr>
+                <td [textContent]="categoryGeneral.name"></td>
+                <td [textContent]="categoryGeneral.description"></td>
+            </tr>
+            <tr>
+                <td [textContent]="categoryGeneral.name"></td>
+                <td [textContent]="categoryGeneral.description"></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
