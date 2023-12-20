@@ -11,7 +11,7 @@ export class CategoriaComponent {
   categoryGeneral = {
     id: 1,
     name: "Test",
-    description: "Test"
+    description: "Que inconstância é essa, menina? Que coisa é essa que você quer e após dois minutos enjoa?"
   };
 
 

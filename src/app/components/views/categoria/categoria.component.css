@@ -25,4 +25,33 @@
     background-attachment: fixed;
 }
 
+.table-row-category{
+    /* descricao categoria */
+    color: white;
+    font-size: 3vmin;
+}
+
+.table-row-category{
+    line-height: 8vmin;
+}
+
+
+
+.table-row-category a{
+    /* nome categoria */
+    color: white;
+    font-size: 4vmin;
+    transition: .9s;
+    text-decoration: none;
+}
+
+.table-row-category a:hover{
+    /* nome categoria */
+    color: wheat;
+}
+
+.thead-row-category{
+    color: white;
+    font-size: 7vmin;
+}
 

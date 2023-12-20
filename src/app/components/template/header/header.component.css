@@ -18,6 +18,7 @@
 .header-title a{
     color: white;
     text-decoration: none;
+    
 }
 
 
@@ -40,5 +41,6 @@
 .header-list a:hover{
     text-decoration: underline;
     transition: .9s;
+    color: wheat;
 }
 

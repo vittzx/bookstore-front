@@ -4,24 +4,25 @@
     </div>
     <table>
         <thead>
-            <tr>
+            <tr class="thead-row-category">
                 <td>Nome</td>
                 <td>Descrição</td>
             </tr>
         </thead>
-        <tbody class="tbody">
-            <tr>
-                <td [textContent]="categoryGeneral.name"><a href=""></a></td>
+        <tbody class="tbody-catergory">
+            <tr class="table-row-category">
+                <td><a href="" [textContent]="categoryGeneral.name"></a></td>
                 <td [textContent]="categoryGeneral.description"></td>
             </tr>
-            <tr>
-                <td [textContent]="categoryGeneral.name"></td>
+            <tr class="table-row-category">
+                <td><a href="" [textContent]="categoryGeneral.name"></a></td>
                 <td [textContent]="categoryGeneral.description"></td>
             </tr>
-            <tr>
-                <td [textContent]="categoryGeneral.name"></td>
+            <tr class="table-row-category">
+                <td><a href="" [textContent]="categoryGeneral.name"></a></td>
                 <td [textContent]="categoryGeneral.description"></td>
             </tr>
+
         </tbody>
     </table>
 </div>
