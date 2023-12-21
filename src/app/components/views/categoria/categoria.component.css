@@ -4,13 +4,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
-    padding: 7vmin;
-    gap :3vmin;
+    text-align: center;
+    padding: 20vmin 10vmin 10vmin 10vmin;
+    gap :5vmin;
+
+   
 }
 
-.content-title{
+.content-title h2{
     font-size: 7vmin;
+    font-weight: 500;
     color: white;
     margin-bottom: 2vmin;
 }
@@ -28,30 +31,46 @@
 .table-row-category{
     /* descricao categoria */
     color: white;
-    font-size: 3vmin;
+    font-size: 2vmin;
+    line-height: 15vmin;
+    
 }
-
-.table-row-category{
-    line-height: 8vmin;
-}
-
-
 
 .table-row-category a{
     /* nome categoria */
     color: white;
-    font-size: 4vmin;
+    font-size: 3vmin;
     transition: .9s;
     text-decoration: none;
 }
 
 .table-row-category a:hover{
     /* nome categoria */
-    color: wheat;
+    color: black;
+    
 }
 
 .thead-row-category{
     color: white;
-    font-size: 7vmin;
+    font-size: 5vmin;
+}
+
+.btn {
+    background-color: #808080;
+    border: 3px solid #808080;
+    color: white;
+    border-radius: 20px 2px;
+    padding: 1.3vmin;
+    font-size: 2.3vmin;
+    transition: .3s;
+    text-decoration: none;
+}
+  
+  
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    transform: scale(1.1);
 }
 
