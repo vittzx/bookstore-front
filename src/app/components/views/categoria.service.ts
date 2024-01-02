@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { CategoryGerenal } from './categoriaGeneral.interface';
 import { Observable } from 'rxjs';
-import { environment } from '../../../environments/environment';
 
 
 @Injectable({
@@ -10,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class CategoriaService {
 
-  private baseUrl: String = "https://cossolibrary.onrender.com/";
+  private baseUrl: String = "https://cossolibrary.onrender.com";
 
   constructor(private http:HttpClient) { }
 

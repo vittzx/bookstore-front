@@ -7,22 +7,23 @@
             <tr class="thead-row-category">
                 <td>Nome</td>
                 <td>Descrição</td>
+<td>Livros</td>
+<td>Editar & Excluir</td>
             </tr>
         </thead>
         <tbody class="tbody-catergory">
-            <tr class="table-row-category">
-                <td><a href="" class="btn" [textContent]="categoryGeneral.name"></a></td>
-                <td [textContent]="categoryGeneral.description"></td>
+            <tr class="table-row-category" *ngFor="let category of categoriesByUrl">
+                <td><a href="" class="btn" [textContent]="category.name"></a></td>
+                <td [textContent]="category.description"></td>
+                <td>
+                    <a href="" class="icon"> <img src="../../../../assets/logosvg/book-solid.svg" alt="book img"></a>
+                </td>
+                    <td>
+                        <a href="" class="icon"> <img src="../../../../assets/logosvg/edit-solid.svg" alt="edit img"></a>
+                        <a href="" class="icon"> <img src="../../../../assets/logosvg/delete-solid.svg" alt="delete img"></a> 
+                </td>
             </tr>
-            <tr class="table-row-category">
-                <td><a href="" class="btn" [textContent]="categoryGeneral.name"></a></td>
-                <td [textContent]="categoryGeneral.description"></td>
-            </tr>
-            <tr class="table-row-category">
-                <td><a href="" class="btn" [textContent]="categoryGeneral.name"></a></td>
-                <td [textContent]="categoryGeneral.description"></td>
-            </tr>
-
         </tbody>
     </table>
+    <a (click)="redirectToCreateCategory()" class="btn-criar"> Criar Categoria </a>
 </div>
