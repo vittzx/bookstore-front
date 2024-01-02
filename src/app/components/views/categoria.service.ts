@@ -18,4 +18,9 @@ export class CategoriaService {
     const url = `${this.baseUrl}/category`
     return this.http.get<CategoryGerenal[]>(url)
   }
+
+  create(){
+
+  }
+
 }
