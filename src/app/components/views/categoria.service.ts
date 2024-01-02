@@ -19,8 +19,9 @@ export class CategoriaService {
     return this.http.get<CategoryGerenal[]>(url)
   }
 
-  create(){
-
+  create(category: CategoryGerenal): Observable<CategoryGerenal>{
+    const url = `${this.baseUrl}/category`
+    return this.http.post<CategoryGerenal>(url,category);
   }
 
 }
