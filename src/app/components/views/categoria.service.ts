@@ -10,7 +10,7 @@ import { environment } from '../../../environments/environment';
 })
 export class CategoriaService {
 
-  private baseUrl: String = environment.baseUrl;
+  private baseUrl: String = "https://cossolibrary.onrender.com/";
 
   constructor(private http:HttpClient) { }
 
