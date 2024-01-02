@@ -23,7 +23,6 @@ export class CategoryCreateComponent {
   create():void{ 
     this.service.create(this.category).subscribe( response => {
       this.router.navigate(['/category'])
-      alert("Categoria Criada !");
     }, err => {
       alert("Campo(s) vazio(s) ou com poucos caracteres")
     })
