@@ -17,12 +17,13 @@ export class CategoryDeleteComponent {
   categoryDelete: CategoryGerenal = {
     id: 0,
     name: '',
-    description: ''
+    description: '',
   }
 
 
   ngOnInit(){
-    this.categoryDelete.id = Number(this.activedRoute.snapshot.paramMap.get('id')) 
+    this.categoryDelete.id = Number(this.activedRoute.snapshot.paramMap.get('id'))
+    this.findById()
   }
 
   redirectToCategories() {
@@ -31,8 +32,15 @@ export class CategoryDeleteComponent {
 
   findById(): void{
     this.service.findById(Number(this.categoryDelete.id)).subscribe(resp =>{
-      this.categoryDelete
+      this.categoryDelete = resp
     });
+  }
+
+  deleteCategory(): void{
+    this.service.delete(this.categoryDelete.id!).subscribe(resp => {
+      this.router.navigate(['/category'])
+      alert(`Categoria ${this.categoryDelete.name} deletada com sucesso!`)
+    })
   }
 
 
