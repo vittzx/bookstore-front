@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CategoriaService } from '../categoria.service';
+import { CategoryGerenal } from '../categoriaGeneral.interface';
 
 @Component({
   selector: 'app-category-delete',
@@ -10,10 +12,29 @@ import { Router } from '@angular/router';
 })
 export class CategoryDeleteComponent {
   
-  constructor(private router: Router) { }
+  constructor(private service: CategoriaService,private router: Router, private activedRoute: ActivatedRoute ) { }
+
+  categoryDelete: CategoryGerenal = {
+    id: 0,
+    name: '',
+    description: ''
+  }
+
+
+  ngOnInit(){
+    this.categoryDelete.id = Number(this.activedRoute.snapshot.paramMap.get('id')) 
+  }
 
   redirectToCategories() {
     this.router.navigate(["/category"]);
   }
+
+  findById(): void{
+    this.service.findById(Number(this.categoryDelete.id)).subscribe(resp =>{
+      this.categoryDelete
+    });
+  }
+
+
 
 }

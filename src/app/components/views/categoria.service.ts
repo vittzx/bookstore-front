@@ -23,4 +23,10 @@ export class CategoriaService {
     return this.http.post<CategoryGerenal>(url,category);
   }
 
+  findById(id:Number): Observable<CategoryGerenal>{ 
+    const url = `${this.baseUrl}/category/${id}`
+    return this.http.get<CategoryGerenal>(url)
+
+  }
+
 }
