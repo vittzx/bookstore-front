@@ -1,3 +1,4 @@
+import { CategoryUpdateComponent } from './components/views/category-update/category-update.component';
 import { Routes } from '@angular/router';
 import { ContainerComponent } from './components/template/container/container.component';
 import { CategoriaComponent } from './components/views/categoria/categoria.component';
@@ -20,6 +21,10 @@ export const routes: Routes = [
     {
         path: 'category/delete/:id',
         component: CategoryDeleteComponent
+    },
+    {
+        path: 'category/update/:id',
+        component: CategoryUpdateComponent
     },
 
 ];

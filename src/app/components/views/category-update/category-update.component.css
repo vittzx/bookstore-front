@@ -20,9 +20,9 @@
     gap :3vmin;
 }
 
-.btn-submit-cancelar{
-    background-color: grey;
-    border: 3px solid grey;
+.btn-submit{
+    background-color: rgb(223, 117, 117);
+    border: 3px solid rgb(223, 117, 117);
     color: white;
     border-radius: 7px;
     padding: 1vmin;
@@ -32,27 +32,9 @@
     margin-left: 4vmin;
 }
 
-.btn-submit-cancelar:hover{
-    background-color: rgb(252, 134, 134);
-    border: 3px solid rgb(236, 123, 123);
-    color: white;
-}
-
-.btn-submit-enviar{
+.btn-submit:hover{
     background-color: grey;
     border: 3px solid grey;
-    color: white;
-    border-radius: 7px;
-    padding: 1vmin;
-    font-size: 2.3vmin;
-    transition: .3s;
-    text-decoration: none;
-    margin-left: 4vmin;
-}
-
-.btn-submit-enviar:hover{
-    background-color: rgb(119, 243, 95);
-    border: 3px solid rgb(119, 243, 95);
     color: white;
 }
 
