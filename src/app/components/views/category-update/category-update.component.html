@@ -1,26 +1,26 @@
 <div class="container bg-image1">
     <div class="content-title">
-        <h2> Atualizar Categoria </h2>
+        <h2> Atualizar Categoria {{ categoryUpdate.name }}</h2>
     </div>
 
     <div>
     <form action="" class="forms-container">
         <div class="container-dados">
             <div class="dados">
-                <label for="category-name"> Nome:   </label>
-                <input  type="text" name="category-name" class="input width-name" placeholder="Ex: Ciencia">
+                <label for="category-name"> Novo nome:   </label>
+                <input  [(ngModel)]="categoryUpdate.name" type="text" name="category-name" class="input width-name" placeholder="Ex: Ciencia">
             </div>
 
             <div class="dados">
-                <label for="category-text"> Descrição: </label>
-                <input  type="text"  name="category-description" class="input width-description" placeholder="Ex: Livros de Ciencia">
+                <label for="category-text"> Nova descrição: </label>
+                <input  [(ngModel)]="categoryUpdate.description" type="text"  name="category-description" class="input width-description" placeholder="Ex: Livros de Ciencia">
             </div>
 
-            <button type="submit" class="btn-submit-enviar">
+            <button (click)="update()" type="submit" class="btn-submit-enviar">
                 Atualizar
             </button>
 
-            <button type="submit" class="btn-submit-cancelar">
+            <button (click)="redirectToCategories()" type="submit" class="btn-submit-cancelar">
                 Cancelar
             </button>
         </div>
