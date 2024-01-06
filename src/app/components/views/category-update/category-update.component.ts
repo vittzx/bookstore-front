@@ -38,7 +38,7 @@ export class CategoryUpdateComponent {
       alert("Categoria atualizada com sucesso!")
       this.route.navigate(['/category']);
     },err=>{
-      console.log(err)
+      alert("Categoria com campos insuficientes!")
     })
   }
 
