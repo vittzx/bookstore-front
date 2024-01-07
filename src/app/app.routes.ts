@@ -4,6 +4,7 @@ import { ContainerComponent } from './components/template/container/container.co
 import { CategoriaComponent } from './components/views/categoria/categoria.component';
 import { CategoryCreateComponent } from './components/views/category-create/category-create.component';
 import { CategoryDeleteComponent } from './components/views/category-delete/category-delete.component';
+import { BooksReadComponent } from './components/views/books-read/books-read.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: 'category/update/:id',
         component: CategoryUpdateComponent
+    },
+    {
+        path: 'category/books',
+        component: BooksReadComponent
     },
 
 ];
