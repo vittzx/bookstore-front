@@ -1,0 +1,34 @@
+<div class="container bg-image1">
+    <div class="content-title">
+        <h2> Atualizar Livro {{bookUpdate.name}}</h2>
+    </div>
+
+    <div>
+    <form action="" class="forms-container">
+        <div class="container-dados">
+            <div class="dados">
+                <label for="category-name"> Novo nome:   </label>
+                <input  [(ngModel)]="bookUpdate.name" type="text" name="category-name" class="input width-name" placeholder="Ex: Ciencia">
+            </div>
+
+            <div class="dados">
+                <label for="category-text"> Nova descrição: </label>
+                <input [(ngModel)]="bookUpdate.description"  type="text"  name="category-description" class="input width-description" placeholder="Ex: Livros de Ciencia">
+            </div>
+
+            <div class="dados">
+                <label for="category-text"> Novo autor: </label>
+                <input [(ngModel)]="bookUpdate.autorship"  type="text"  name="category-description" class="input width-description" placeholder="Ex: Livros de Ciencia">
+            </div>
+
+            <button (click)="update()"  type="submit" class="btn-submit-enviar">
+                Atualizar
+            </button>
+
+            <button (click)="redirectToCategories()" type="submit" class="btn-submit-cancelar">
+                Cancelar
+            </button>
+        </div>
+    </form>
+</div>
+

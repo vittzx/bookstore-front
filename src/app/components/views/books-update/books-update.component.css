@@ -1,0 +1,91 @@
+.bg-image1{
+    background-image: url(../../../../assets/imgs/bookimg2.jpeg);
+    width: 93.265% ;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+}
+
+.container{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 7vmin;
+    padding-top: 30vmin;
+    gap :3vmin;
+}
+
+.btn-submit-cancelar{
+    background-color: grey;
+    border: 3px solid grey;
+    color: white;
+    border-radius: 7px;
+    padding: 1vmin;
+    font-size: 2.3vmin;
+    transition: .3s;
+    text-decoration: none;
+    margin-left: 4vmin;
+}
+
+.btn-submit-cancelar:hover{
+    background-color: rgb(252, 134, 134);
+    border: 3px solid rgb(236, 123, 123);
+    color: white;
+}
+
+.btn-submit-enviar{
+    background-color: grey;
+    border: 3px solid grey;
+    color: white;
+    border-radius: 7px;
+    padding: 1vmin;
+    font-size: 2.3vmin;
+    transition: .3s;
+    text-decoration: none;
+    margin-left: 4vmin;
+}
+
+.btn-submit-enviar:hover{
+    background-color: rgb(119, 243, 95);
+    border: 3px solid rgb(119, 243, 95);
+    color: white;
+}
+
+
+.content-title h2{
+    font-size: 7vmin;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2vmin;
+}
+
+
+.container-dados{
+    width: 100%;
+    min-height: 10vh;
+}
+
+.dados{
+    padding-bottom: 5vmin;
+    color: white;
+    font-size: 4vmin;
+}
+
+.input{
+    font-size: 2vmin;
+    height: 1.5vmin;
+    padding: 1vmin;
+}
+
+.width-name{
+    width: 10%;
+}
+
+.width-description{
+    width: 20%;
+}

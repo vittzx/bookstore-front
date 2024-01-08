@@ -17,9 +17,21 @@ export class LivroService {
     return this.http.get<LivroInterface[]>(url)
   }
 
+  findById(id:Number): Observable<LivroInterface>{ 
+    const url = `${this.baseUrl}/category/book/${id}`
+    return this.http.get<LivroInterface>(url)
+  }
+
   create(book: LivroInterface, id_cat:Number):Observable<LivroInterface>{
     const url = `${this.baseUrl}/category/book?category=${id_cat}`
     return this.http.post<LivroInterface>(url,book);
   }
+  
+  update(book: LivroInterface):Observable<LivroInterface>{
+    const url = `${this.baseUrl}/category/book/${book.id}`
+    return this.http.put<LivroInterface>(url, book);
+  }
+
+  
 
 }
