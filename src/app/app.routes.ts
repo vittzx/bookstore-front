@@ -8,6 +8,7 @@ import { BooksReadComponent } from './components/views/books-read/books-read.com
 import { CategorySingleReadComponent } from './components/views/category-single-read/category-single-read.component';
 import { BooksCreateComponent } from './components/views/books-create/books-create.component';
 import { BooksUpdateComponent } from './components/views/books-update/books-update.component';
+import { BookDeleteComponent } from './components/views/book-delete/book-delete.component';
 
 export const routes: Routes = [
     {
@@ -45,6 +46,10 @@ export const routes: Routes = [
     {
         path: 'category/books/update/:id',
         component: BooksUpdateComponent
+    },
+    {
+        path: 'category/books/delete/:id',
+        component: BookDeleteComponent
     },
 
 

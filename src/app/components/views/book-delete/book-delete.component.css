@@ -1,0 +1,89 @@
+.content{
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 20vmin 10vmin 10vmin 10vmin;
+    gap :5vmin;
+}
+
+
+.bg-image2{
+    background-image: url(../../../../assets/imgs/bookimg2.jpeg);
+    width: 93.265% ;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+}
+
+.content-title{ 
+    color: white;
+    font-size: 6vmin;
+    font-weight: 500;
+}
+
+
+.content-description{
+    color: white;
+    font-size: 2vmin;
+    font-weight: 500;
+}
+
+
+.btn-sim {
+    width: 10%;
+    background-color: #808080;
+    border: 3px solid #808080;
+    color: white;
+    padding: 1.3vmin;
+    font-size: 2.3vmin;
+    transition: .3s;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+  
+  
+.btn-sim:hover {
+    background-color: rgb(102, 240, 90);
+    color: white;
+    border: 3px solid rgb(102, 240, 90);
+    
+}
+
+.btn-nao {
+    border-radius: 8px;
+    width: 10%;
+    background-color: grey;
+    border: 3px solid #808080;
+    color: white;
+    padding: 1.3vmin;
+    font-size: 2.3vmin;
+    transition: .3s;
+    text-decoration: none;
+
+}
+  
+  
+.btn-nao:hover {
+    background-color: rgb(230, 38, 38);
+    color: white;
+    border: 3px solid rgb(230, 38, 38);
+    
+}
+
+.box{
+    display: flex;
+    min-height: 6vmin;
+    gap: 3vmin;
+
+}
+
+.category-name{
+    color:rgb(240, 92, 92) ;
+}
+

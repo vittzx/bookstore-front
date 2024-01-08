@@ -33,5 +33,11 @@ export class LivroService {
   }
 
   
+  delete(id: Number): Observable<void>{
+    const url = ` ${this.baseUrl}/category/book/${id}`
+    return this.http.delete<void>(url)
+  }
+
+  
 
 }
