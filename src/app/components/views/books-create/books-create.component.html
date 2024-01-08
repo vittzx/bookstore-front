@@ -1,0 +1,32 @@
+<div class="container bg-image1">
+    <div class="content-title">
+        <h2> Criar Livro </h2>
+    </div>
+
+    <div>
+    <form action="" class="forms-container">
+        <div class="container-dados">
+            <div class="dados">
+                <label for="category-name"> Nome:   </label>
+                <input [(ngModel)]="bookCreate.name" type="text" name="category-name" class="input width-name" placeholder="Ex: O Jogo Interior do Tenis" maxlength="50">
+            </div>
+
+            <div class="dados">
+                <label for="category-text"> Descrição: </label>
+                <input [(ngModel)]="bookCreate.description" type="text"  name="category-description" class="input width-description" placeholder="Ex: Livro que descreve o pensamento do ser humano em jogos "  maxlength="150">
+            </div>
+
+            <div class="dados">
+                <label for="category-text"> Autor: </label>
+                <input [(ngModel)]="bookCreate.autorship" type="text"  name="category-description" class="input width-description" placeholder="Ex: W. TIMOTHY GALLWEY"  maxlength="50">
+            </div>
+
+            <button  (click)="create()"  type="submit" class="btn-submit-enviar">
+                Criar Livro 
+            </button>
+            <button  (click)="cancelCreateBook()" type="submit" class="btn-submit-cancelar">
+                Cancelar
+            </button>
+        </div>
+    </form>
+</div>

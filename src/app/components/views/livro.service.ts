@@ -16,4 +16,10 @@ export class LivroService {
     const url = `${this.baseUrl}/category/book`
     return this.http.get<LivroInterface[]>(url)
   }
+
+  create(book: LivroInterface, id_cat:Number):Observable<LivroInterface>{
+    const url = `${this.baseUrl}/category/book?category=${id_cat}`
+    return this.http.post<LivroInterface>(url,book);
+  }
+
 }

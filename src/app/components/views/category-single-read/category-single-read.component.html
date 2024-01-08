@@ -4,7 +4,7 @@
     </div>
     <div class="boxes">
         <div class="box" *ngFor="let book of categorySingle.books"> 
-            <h1 [textContent]="book.name"></h1>
+            <h1>Title: {{book.name}}</h1>
             <h3 [textContent]="book.description"></h3>
             <h3 [textContent]="book.autorship"></h3>
             <div class="box-icon">
@@ -14,5 +14,5 @@
         </div>
     </div>
 
-    <a class="btn-criar"> Criar Livro </a>
+    <a class="btn-criar" href="/category/{{categorySingle.id}}/books/create"> Criar Livro </a>
 </div>
