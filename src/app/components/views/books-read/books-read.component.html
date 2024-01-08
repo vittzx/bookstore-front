@@ -6,13 +6,13 @@
         <div class="box" *ngFor="let book of books"> 
             <h1 [textContent]="book.name"></h1>
             <h3 [textContent]="book.description"></h3>
+            <h1 [textContent]="book.autorship"></h1>
             <div class="box-icon">
                 <h1><a href=""><img src="../../../../assets/logosvg/edit-solid.svg" alt="Edit"></a></h1>
                 <h1><a href=""><img src="../../../../assets/logosvg/delete-solid.svg" alt="delete"></a></h1>
-            </div>
-            <h1 [textContent]="book.autorship"></h1>
+            </div>  
         </div>
     </div>
 
-    <a class="btn-criar"> Criar Categoria </a>
+    <a class="btn-criar"> Criar Livro </a>
 </div>

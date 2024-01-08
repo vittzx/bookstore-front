@@ -101,12 +101,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2vmin;
-}
-
-
-.icon{
-    padding-left: 3vmin;
+    gap: 8vmin;
 }
 
 
