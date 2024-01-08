@@ -1,0 +1,18 @@
+<div class="content bg-image2">
+    <div class="content-title">
+        <h2><span class="red">{{categorySingle.name}} </span>books</h2>
+    </div>
+    <div class="boxes">
+        <div class="box" *ngFor="let book of categorySingle.books"> 
+            <h1 [textContent]="book.name"></h1>
+            <h3 [textContent]="book.description"></h3>
+            <h3 [textContent]="book.autorship"></h3>
+            <div class="box-icon">
+                <h1><a href=""><img src="../../../../assets/logosvg/edit-solid.svg" alt="Edit"></a></h1>
+                <h1><a href=""><img src="../../../../assets/logosvg/delete-solid.svg" alt="delete"></a></h1>
+            </div>  
+        </div>
+    </div>
+
+    <a class="btn-criar"> Criar Livro </a>
+</div>
