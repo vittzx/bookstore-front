@@ -9,6 +9,7 @@ import { CategorySingleReadComponent } from './components/views/category-single-
 import { BooksCreateComponent } from './components/views/books-create/books-create.component';
 import { BooksUpdateComponent } from './components/views/books-update/books-update.component';
 import { BookDeleteComponent } from './components/views/book-delete/book-delete.component';
+import { AboutComponent } from './components/index/about/about.component';
 
 export const routes: Routes = [
     {
@@ -51,6 +52,10 @@ export const routes: Routes = [
         path: 'category/books/delete/:id',
         component: BookDeleteComponent
     },
-
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    
 
 ];
