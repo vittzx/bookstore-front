@@ -38,7 +38,7 @@ export class BookDeleteComponent {
 
   deleteBook(): void{
     this.service.delete(this.bookDelete.id!).subscribe(resp => {
-      this.router.navigate(['/category'])
+      this.router.navigate(['/category/books'])
       alert(`Livro ${this.bookDelete.name} deletado com sucesso!`)
     })
   }
