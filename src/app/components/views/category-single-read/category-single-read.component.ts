@@ -1,13 +1,13 @@
 import { CategorySingle } from './../categoriaSingle.interface';
 import { Component } from '@angular/core';
 import { CategoriaService } from '../categoria.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-category-single-read',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './category-single-read.component.html',
   styleUrl: './category-single-read.component.css'
 })

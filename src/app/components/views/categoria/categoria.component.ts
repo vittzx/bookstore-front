@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { CategoriaService } from '../categoria.service';
 import { CategoryGerenal } from '../categoriaGeneral.interface';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-categoria',
     standalone: true,
     templateUrl: './categoria.component.html',
     styleUrl: './categoria.component.css',
-    imports: [CommonModule]
+    imports: [CommonModule, RouterLink]
 })
 export class CategoriaComponent {
 

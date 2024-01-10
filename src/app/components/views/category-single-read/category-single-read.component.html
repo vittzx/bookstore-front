@@ -9,11 +9,11 @@
             <h3 >Autor: {{book.autorship}}</h3>
             <h3>Id Livro: {{book.id}}</h3>
             <div class="box-icon">
-                <h1><a href="/category/books/update/{{book.id}}"><img src="../../../../assets/logosvg/edit-solid.svg" alt="Edit"></a></h1>
-                <h1><a href="/category/books/delete/{{book.id}}"><img src="../../../../assets/logosvg/delete-solid.svg" alt="delete"></a></h1>
+                <h1><a routerLink="/category/books/update/{{book.id}}"><img src="../../../../assets/logosvg/edit-solid.svg" alt="Edit"></a></h1>
+                <h1><a routerLink="/category/books/delete/{{book.id}}"><img src="../../../../assets/logosvg/delete-solid.svg" alt="delete"></a></h1>
             </div>  
         </div>
     </div>
 
-    <a class="btn-criar" href="/category/{{categorySingle.id}}/books/create"> Criar Livro </a>
+    <a class="btn-criar" routerLink="/category/{{categorySingle.id}}/books/create"> Criar Livro </a>
 </div>
